@@ -330,8 +330,7 @@ body {
 
 .sammy-home p, .sammy-blog p, .sammy-about p, .sammy-home h1, .sammy-blog h1, .sammy-about h1, .sammy-home h2, .sammy-blog h2, .sammy-about h2, .sammy-home h3, .sammy-blog h3, .sammy-about h3, .sammy-home h4, .sammy-blog h4, .sammy-about h4, .sammy-home h5, .sammy-blog h5, .sammy-about h5, .sammy-home h6, .sammy-blog h6, .sammy-about h6, .sammy-home figcaption, .sammy-blog figcaption, .sammy-about figcaption {
   max-width: 40rem;
-  margin-right: auto;
-  font-size: 1.125rem; }
+  margin-right: auto; }
 
 .sammy-home ol, .sammy-blog ol, .sammy-about ol, .sammy-home ul, .sammy-blog ul, .sammy-about ul {
   margin-top: 0;
@@ -341,35 +340,12 @@ body {
   max-width: 37.5rem;
   margin-right: auto; }
 
-.sammy-home h2, .sammy-blog h2, .sammy-about h2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
-
-.sammy-home h3, .sammy-blog h3, .sammy-about h3 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  color: #767676; }
-
-.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
-  margin-bottom: 0.5rem;
-  font-style: italic;
-  font-weight: 400; }
-
-.sammy-home h5, .sammy-blog h5, .sammy-about h5 {
-  margin-bottom: 0.5rem;
-  font-style: italic;
-  font-weight: 400;
-  color: #767676; }
-
-.sammy-home h6, .sammy-blog h6, .sammy-about h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 400;
-  color: #767676; }
-
 .sammy-home header, .sammy-blog header, .sammy-about header {
   margin-bottom: 2.5rem; }
   .sammy-home header h1, .sammy-blog header h1, .sammy-about header h1 {
-    font-weight: 600; }
+    font-size: 2.75rem;
+    font-weight: 600;
+    max-width: 100%; }
   .sammy-home header p, .sammy-blog header p, .sammy-about header p {
     font-size: 1.125rem;
     color: #767676;
@@ -378,7 +354,23 @@ body {
     padding-bottom: 0; }
 
 .sammy-home p, .sammy-blog p, .sammy-about p {
+  font-size: 1.125rem;
   padding-bottom: 1rem; }
+
+.sammy-home h2, .sammy-blog h2, .sammy-about h2 {
+  font-size: 2rem; }
+
+.sammy-home h3, .sammy-blog h3, .sammy-about h3 {
+  font-size: 1.75rem; }
+
+.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+  font-size: 1.5rem; }
+
+.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+  font-size: 1.25rem; }
+
+.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+  font-size: 1.125rem; }
 
 .sammy-home figure, .sammy-blog figure, .sammy-about figure {
   max-width: 100%;
@@ -405,21 +397,20 @@ html {
 
 /*18px*/
 body {
+  background-color: white;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   line-height: 1.65;
-  color: #151515;
-  font-size: 1.125rem; }
+  color: #151515; }
 
 p {
-  font-weight: 400;
-  margin: 0;
-  padding: 0; }
+  margin-bottom: 1.15rem; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; }
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.15; }
 
 .sammy-home section h2 {
   font-size: 1.125rem; }
