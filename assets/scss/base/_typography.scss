@@ -1,0 +1,66 @@
+/**
+ * Basic typography style for copy text
+ */
+
+ html {font-size: 100%;} /*18px*/
+
+body {
+  background-color: white;
+  font-family: $g-font-family;
+  font-weight: 400;
+  line-height: 1.65;
+  color: $l-text-normal;
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: $g-font-family;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+%l1 {
+  margin-top: 0;
+  font-size: 4.209em;
+}
+
+%l2 {font-size: rem(32);}
+
+%l3 {font-size: rem(24);}
+
+%l4 {font-size: rem(22);}
+
+%l5 {font-size: rem(18);}
+
+%sammy-standard-header {
+   font-size: rem(18);
+}
+
+%sammy-standard-text {
+   font-size: rem(18);
+   font-weight: 400;
+   line-height: 1.65;
+}
+
+a {
+   color: $l-primary;
+   text-decoration: none;
+   transition: color 100ms;
+   transition-timing-function: ease-in-out;
+
+   &:hover {
+         color: darken($l-primary, 20%);
+         transition: color 100ms;
+         transition-timing-function: ease-in-out;
+   }
+
+   svg {
+         padding-top: 4px;
+   }
+}
+
+ .emoji {
+   font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+ }

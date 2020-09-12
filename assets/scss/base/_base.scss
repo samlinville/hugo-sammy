@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+body {
+    background-color: FFFAFA;
+}
+
+.sammy-container {
+    max-width: $g-max-width;
+    @include margin(null auto);
+
+    @include media('>=xlarge') {
+        @include padding(null $g-xl-container-padding)
+    }
+    
+    @include media('>=large', '<xlarge') {
+        @include padding(null $g-lg-container-padding)
+    }
+    
+    @include media('>=small', '<large') {
+        @include padding(null $g-md-container-padding)
+    }
+
+    @include media('<small') {
+        @include padding(null $g-sm-container-padding)
+    }
+}
+
+%sammy-text-block {
+
+    p, h1, h2, h3, h4, h5, h6, figcaption {
+        max-width: rem(640);
+        @include margin(null auto null null);
+    }
+
+    ol, ul {
+        @include margin(0 null rem(16) null);
+    }
+
+    li {
+        max-width: rem(600);
+        @include margin(null auto null null);
+    }
+
+    header {
+        @include margin(null null rem(40) null);
+
+        h1 {
+            font-size: rem(44);
+            font-weight: 600;
+            max-width: 100%;
+        }
+
+        p {
+            font-size: rem(18);
+            color: $l-text-light;
+            line-height: 1.15;
+            @include margin(rem(8) null null null);
+            @include padding(null null 0 null);
+        }
+    }
+
+    p {
+        font-size: rem(18);
+        @include padding(null null rem(16) null);
+    }
+
+    h2 {font-size: rem(32)};
+    h3 {font-size: rem(28)};
+    h4 {font-size: rem(24)};
+    h4 {font-size: rem(20)};
+    h4 {font-size: rem(18)};
+
+    figure {
+        max-width: 100%;
+        @include margin(null null null 0);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .sammy-fig-md {
+        max-width: rem(640);
+    }
+
+    .sammy-fig-sm {
+        max-width: rem(320);
+    }
+
+    figcaption {
+        color: $l-text-light;
+        font-size: rem(16);
+        @include margin(rem(8) null null null);
+    }
+}

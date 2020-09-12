@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page. 
+// -----------------------------------------------------------------------------
+
+.sammy-home {
+    @extend %sammy-text-block;
+
+    section {
+        @include margin(rem(24) null null null);
+
+        h2 {
+            @extend %sammy-standard-header;
+            @include margin(null null rem(8) null);
+        }
+
+        h3 {
+            @extend %sammy-standard-text;
+        }
+    }
+}

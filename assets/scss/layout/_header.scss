@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.sammy-navigation {
+    @include clearfix;
+    @include padding(rem(64) null rem(96) null);
+
+    @include media('<medium') {
+        @include padding(rem(16) null null null);
+    }
+
+    .sammy-title {
+        float: left;
+
+        a {
+            color: $l-text-normal;
+
+            &:hover {
+                color: $l-primary;
+            }
+        }
+    }
+
+    p {
+        margin: 0;
+        span { color: $l-text-light; }
+    }
+
+    nav {
+        float: left;
+        @include margin(null null null rem(24));
+
+        @include media('<medium') {
+            float: left;
+            width: 100%;
+            @include padding(rem(8) null null null);
+            margin: 0;
+        }
+
+        ul { 
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            display: block;
+            float: left;
+            @include padding(null null null rem(16));
+            &:first-child {
+                padding-left: 0;
+            }
+
+            .no-line { border: none; }
+            span { @include hide-visually;}
+        }
+    }
+}

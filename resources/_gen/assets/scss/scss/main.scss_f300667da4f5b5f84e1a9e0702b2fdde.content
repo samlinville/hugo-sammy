@@ -313,7 +313,6 @@ body {
     .sammy-container {
       padding-right: 4rem;
       padding-left: 4rem; } }
-
 @media (min-width: 992px) and (max-width: 1367px) {
   .sammy-container {
     padding-right: 2rem;
@@ -327,64 +326,63 @@ body {
     .sammy-container {
       padding-right: 1rem;
       padding-left: 1rem; } }
-
-.sammy-home p, .sammy-blog p, .sammy-about p, .sammy-home h1, .sammy-blog h1, .sammy-about h1, .sammy-home h2, .sammy-blog h2, .sammy-about h2, .sammy-home h3, .sammy-blog h3, .sammy-about h3, .sammy-home h4, .sammy-blog h4, .sammy-about h4, .sammy-home h5, .sammy-blog h5, .sammy-about h5, .sammy-home h6, .sammy-blog h6, .sammy-about h6, .sammy-home figcaption, .sammy-blog figcaption, .sammy-about figcaption {
+.sammy-about p, .sammy-blog p, .sammy-home p, .sammy-about h1, .sammy-blog h1, .sammy-home h1, .sammy-about h2, .sammy-blog h2, .sammy-home h2, .sammy-about h3, .sammy-blog h3, .sammy-home h3, .sammy-about h4, .sammy-blog h4, .sammy-home h4, .sammy-about h5, .sammy-blog h5, .sammy-home h5, .sammy-about h6, .sammy-blog h6, .sammy-home h6, .sammy-about figcaption, .sammy-blog figcaption, .sammy-home figcaption {
   max-width: 40rem;
   margin-right: auto; }
 
-.sammy-home ol, .sammy-blog ol, .sammy-about ol, .sammy-home ul, .sammy-blog ul, .sammy-about ul {
+.sammy-about ol, .sammy-blog ol, .sammy-home ol, .sammy-about ul, .sammy-blog ul, .sammy-home ul {
   margin-top: 0;
   margin-bottom: 1rem; }
 
-.sammy-home li, .sammy-blog li, .sammy-about li {
+.sammy-about li, .sammy-blog li, .sammy-home li {
   max-width: 37.5rem;
   margin-right: auto; }
 
-.sammy-home header, .sammy-blog header, .sammy-about header {
+.sammy-about header, .sammy-blog header, .sammy-home header {
   margin-bottom: 2.5rem; }
-  .sammy-home header h1, .sammy-blog header h1, .sammy-about header h1 {
+  .sammy-about header h1, .sammy-blog header h1, .sammy-home header h1 {
     font-size: 2.75rem;
     font-weight: 600;
     max-width: 100%; }
-  .sammy-home header p, .sammy-blog header p, .sammy-about header p {
+  .sammy-about header p, .sammy-blog header p, .sammy-home header p {
     font-size: 1.125rem;
     color: #767676;
     line-height: 1.15;
     margin-top: 0.5rem;
     padding-bottom: 0; }
 
-.sammy-home p, .sammy-blog p, .sammy-about p {
+.sammy-about p, .sammy-blog p, .sammy-home p {
   font-size: 1.125rem;
   padding-bottom: 1rem; }
 
-.sammy-home h2, .sammy-blog h2, .sammy-about h2 {
+.sammy-about h2, .sammy-blog h2, .sammy-home h2 {
   font-size: 2rem; }
 
-.sammy-home h3, .sammy-blog h3, .sammy-about h3 {
+.sammy-about h3, .sammy-blog h3, .sammy-home h3 {
   font-size: 1.75rem; }
 
-.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+.sammy-about h4, .sammy-blog h4, .sammy-home h4 {
   font-size: 1.5rem; }
 
-.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+.sammy-about h4, .sammy-blog h4, .sammy-home h4 {
   font-size: 1.25rem; }
 
-.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+.sammy-about h4, .sammy-blog h4, .sammy-home h4 {
   font-size: 1.125rem; }
 
-.sammy-home figure, .sammy-blog figure, .sammy-about figure {
+.sammy-about figure, .sammy-blog figure, .sammy-home figure {
   max-width: 100%;
   margin-left: 0; }
-  .sammy-home figure img, .sammy-blog figure img, .sammy-about figure img {
+  .sammy-about figure img, .sammy-blog figure img, .sammy-home figure img {
     width: 100%; }
 
-.sammy-home .sammy-fig-md, .sammy-blog .sammy-fig-md, .sammy-about .sammy-fig-md {
+.sammy-about .sammy-fig-md, .sammy-blog .sammy-fig-md, .sammy-home .sammy-fig-md {
   max-width: 40rem; }
 
-.sammy-home .sammy-fig-sm, .sammy-blog .sammy-fig-sm, .sammy-about .sammy-fig-sm {
+.sammy-about .sammy-fig-sm, .sammy-blog .sammy-fig-sm, .sammy-home .sammy-fig-sm {
   max-width: 20rem; }
 
-.sammy-home figcaption, .sammy-blog figcaption, .sammy-about figcaption {
+.sammy-about figcaption, .sammy-blog figcaption, .sammy-home figcaption {
   color: #767676;
   font-size: 1rem;
   margin-top: 0.5rem; }

@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Global Variables
+$g-font-base: 100%; //16px
+$g-font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$g-max-width: 960px;
+$g-xl-container-padding: 4rem;
+$g-lg-container-padding: 2rem;
+$g-md-container-padding: 2rem;
+$g-sm-container-padding: 1rem;
+
+//Media Queries
+$mq-xl: '>=xlarge';
+$mq-lg: '>=large', '<xlarge';
+$mq-md: '>=medium', '<large';
+$mq-sm: '<medium';
+$mq-sm-up: '>=small';
+$mq-md-up: '>=medium';
+$mq-lg-up: '>=large';
+
+// Light Theme
+$l-background: ffffff;
+
+$l-primary: #0066cc;
+$l-secondary: #cccccc;
+
+$l-text-light: #767676;
+$l-text-normal: #151515;
+
+// Dark Theme
+$d-background: #000000;
+
+$d-primary: #0066cc;
+$d-secondary: #cccccc;
+
+$d-text-light: #767676;
+$d-text-normal: #ffffff;

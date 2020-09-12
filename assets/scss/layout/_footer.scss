@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+    @include clearfix;
+    @include margin(rem(80) null rem(64) null);
+
+    p {
+        float: right;
+        font-size: rem(18);
+        margin: 0;
+    }
+
+    p:first-child {
+        display: block;
+        float: left;
+    }
+}
