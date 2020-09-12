@@ -1,7 +1,11 @@
             <footer>
-                <p>&#169; 2020 Sam Linville. This site follows a <a href="#">Code of Ethics.</a></p>
-                <p>Made with <span class="emoji">❤️</span> in Stanford, CA</p>
+                <p>&#169; {{ now.Format "2006" }} {{ $.Site.Params.name }}. This site follows a <a href="{{ "/code-of-ethics/" | absURL }}">Code of Ethics.</a></p>
+                <p>Made with <span class="emoji">❤️</span> in {{ $.Site.Params.location }}</p>
             </footer>
         </div>
+
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
+
     </body>
 </html>

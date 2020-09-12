@@ -2,13 +2,16 @@
     <div class="sammy-container">
         <div class="sammy-navigation">
             <div class="sammy-title">
-                <p><a href="#">Sam Linville <span> — Product design & strategy</span></a></p>
+                <p><a href="{{ .Site.BaseURL }}">{{ $.Site.Params.name }}&nbsp;<span>—&nbsp;{{ $.Site.Params.job }}</span></a></p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Notes</a></li>
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">
+                        {{ $text := print .Name | safeHTML }}
+                        {{ $text }}
+                    </a></li>
+                    {{ end }}
                 </ul>
             </nav>
         </div>

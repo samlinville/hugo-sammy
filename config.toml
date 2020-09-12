@@ -1,3 +1,18 @@
 baseURL = "https://samlinville.com/"
 languageCode = "en-us"
 title = "Sam Linville — Product design & strategy"
+
+[params]
+  name = "Sam Linville"
+  job = "Product designer & strategist"
+  location = "Stanford, CA"
+
+[menu]
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2

@@ -328,29 +328,60 @@ body {
       padding-right: 1rem;
       padding-left: 1rem; } }
 
+.sammy-home p, .sammy-blog p, .sammy-about p, .sammy-home h1, .sammy-blog h1, .sammy-about h1, .sammy-home h2, .sammy-blog h2, .sammy-about h2, .sammy-home h3, .sammy-blog h3, .sammy-about h3, .sammy-home h4, .sammy-blog h4, .sammy-about h4, .sammy-home h5, .sammy-blog h5, .sammy-about h5, .sammy-home h6, .sammy-blog h6, .sammy-about h6, .sammy-home figcaption, .sammy-blog figcaption, .sammy-about figcaption {
+  max-width: 40rem;
+  margin-right: auto;
+  font-size: 1.125rem; }
+
+.sammy-home ol, .sammy-blog ol, .sammy-about ol, .sammy-home ul, .sammy-blog ul, .sammy-about ul {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.sammy-home li, .sammy-blog li, .sammy-about li {
+  max-width: 37.5rem;
+  margin-right: auto; }
+
+.sammy-home h2, .sammy-blog h2, .sammy-about h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.sammy-home h3, .sammy-blog h3, .sammy-about h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #767676; }
+
+.sammy-home h4, .sammy-blog h4, .sammy-about h4 {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 400; }
+
+.sammy-home h5, .sammy-blog h5, .sammy-about h5 {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #767676; }
+
+.sammy-home h6, .sammy-blog h6, .sammy-about h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: #767676; }
+
 .sammy-home header, .sammy-blog header, .sammy-about header {
   margin-bottom: 2.5rem; }
   .sammy-home header h1, .sammy-blog header h1, .sammy-about header h1 {
-    max-width: 40rem;
-    margin-right: auto;
-    font-size: 1.125rem;
     font-weight: 600; }
   .sammy-home header p, .sammy-blog header p, .sammy-about header p {
     font-size: 1.125rem;
     color: #767676;
     line-height: 1.15;
     margin-top: 0.5rem;
-    margin-right: auto;
     padding-bottom: 0; }
 
 .sammy-home p, .sammy-blog p, .sammy-about p {
-  padding-bottom: 1rem;
-  max-width: 40rem;
-  margin-right: auto; }
+  padding-bottom: 1rem; }
 
 .sammy-home figure, .sammy-blog figure, .sammy-about figure {
   max-width: 100%;
-  margin-right: auto;
   margin-left: 0; }
   .sammy-home figure img, .sammy-blog figure img, .sammy-about figure img {
     width: 100%; }
@@ -364,9 +395,7 @@ body {
 .sammy-home figcaption, .sammy-blog figcaption, .sammy-about figcaption {
   color: #767676;
   font-size: 1rem;
-  max-width: 43.75rem;
-  margin-top: 0.5rem;
-  margin-right: auto; }
+  margin-top: 0.5rem; }
 
 /**
  * Basic typography style for copy text
