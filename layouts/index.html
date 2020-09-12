@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<main class="sammy-home">
+    <header>
+        <h1>{{ .Title }} <span class="emoji">👋</span></h1>
+    </header>
+
+    {{ .Content }}
+
+    <section>
+        <h2>Recent posts</h2>
+        {{ range where .Pages "Section" "blog" }}
+        <article>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        </article>
+        {{ end }}
+    </section>
+</main>
+
+{{ end }}
