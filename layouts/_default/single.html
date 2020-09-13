@@ -1,9 +1,10 @@
 {{ define "main" }}
 
 <main>
-    <article class="sammy-blog">
+    <article>
         <header>
             <h1>{{ .Title }}</h1>
+            <p>{{ .Params.Subtitle }}</p>
         </header>
         {{ .Content }}
     </article>

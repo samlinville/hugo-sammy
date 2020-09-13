@@ -2,46 +2,65 @@
  * Basic typography style for copy text
  */
 
- html {font-size: 100%;} /*18px*/
+html {font-size: 100%;} /*18px*/
 
 body {
-  background-color: white;
   font-family: $g-font-family;
+  font-size: rem(18);
   font-weight: 400;
   line-height: 1.65;
   color: $l-text-normal;
 }
 
-p {margin-bottom: 1.15rem;}
+p {
+  @include margin(0 null rem(24) null);
+}
 
-h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: $g-font-family;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.15;
 }
 
-%l1 {
-  margin-top: 0;
-  font-size: 4.209em;
+header {
+  p {
+    font-size: rem(24);
+  }
 }
 
-%l2 {font-size: rem(32);}
-
-%l3 {font-size: rem(24);}
-
-%l4 {font-size: rem(22);}
-
-%l5 {font-size: rem(18);}
-
-%sammy-standard-header {
-   font-size: rem(18);
+h1 {
+  font-size: rem(48);
+  font-weight: 600;
 }
 
-%sammy-standard-text {
-   font-size: rem(18);
-   font-weight: 400;
-   line-height: 1.65;
+h2 {
+  @include margin(rem(56) null rem(16) null);
+  font-size: rem(32);
+}
+
+h3 {
+  @include margin(rem(48) null rem(8) null);
+  font-size: rem(24);
+  font-weight: 600;
+}
+
+h4 {
+  @include margin(rem(36) null rem(8) null);
+  font-size: rem(20);
+  font-weight: 600;
+  color: $l-text-light;
+}
+
+h5 {
+  @include margin(rem(24) null rem(8) null);
+  font-size: rem(18);
+  font-style: italic;
+}
+
+h6 {
+  @include margin(rem(24) null rem(8) null);
+  font-size: rem(18);
+  font-style: italic;
+  color: $l-text-light;
 }
 
 a {
@@ -55,12 +74,39 @@ a {
          transition: color 100ms;
          transition-timing-function: ease-in-out;
    }
-
-   svg {
-         padding-top: 4px;
-   }
 }
 
- .emoji {
-   font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
- }
+ol, ul {
+  @include margin(0 null rem(16) null);
+  @include padding(null null null rem(20));
+}
+
+li {
+  max-width: rem(600);
+  @include margin(null auto rem(8) null);
+  @include padding(null null null rem(8));
+}
+
+pre {
+  max-width: rem(640);
+  @include margin(rem(36) null);
+  code {
+    background: none;
+    font-size: rem(16);
+  }
+
+}
+
+code {
+  @include padding(rem(4) rem(6));
+  border-radius: rem(3);
+  
+  font-family: "IBM Plex Mono", "Monaco", 'Courier New', Courier, monospace;
+  font-size: rem(14);
+  color: #EB5D5D;
+  background-color: #EDECEB;
+}
+
+.emoji {
+  font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}

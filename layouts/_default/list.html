@@ -1,12 +1,15 @@
 {{ define "main" }}
 
-<main class="sammy-list">
-    <h1>{{ .Title }}</h1>
+<main>
+    <header>
+        <h1>{{ .Title }}</h1>
+    </header>
 
     {{ range .Pages }}
     <article>
         <a href="{{ .RelPermalink }}">
             <h2>{{ .Title }}</h2>
+            <p>{{ .Params.Subtitle }}</p>
             <p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p>
         </a>
     </article>

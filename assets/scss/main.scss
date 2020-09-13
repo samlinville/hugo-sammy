@@ -2,12 +2,10 @@
 
 // 1. Configuration and helpers
 @import
-  'abstracts/bourbon/bourbon',
+  'abstracts/bourbon/bourbon.scss',
   'abstracts/variables',
   'abstracts/media-queries',
-  'abstracts/type-scale',
-  'abstracts/functions',
-  'abstracts/mixins';
+  'abstracts/functions';
 
 // 2. Vendors
 @import
@@ -18,7 +16,7 @@
   'base/base',
   'base/fonts',
   'base/typography',
-  'base/helpers';
+  'base/highlight';
 
 // 4. Layout-related sections
 @import
@@ -31,10 +29,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home',
-  'pages/blog',
-  'pages/about',
-  'pages/list';
+  'pages/index';
 
 // 7. Themes
 @import

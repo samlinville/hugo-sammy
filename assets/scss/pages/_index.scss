@@ -1,0 +1,14 @@
+main {
+    section {
+        h2 {
+            font-weight: 600;
+            font-size: rem(18);
+        }
+
+        h3 {
+            @include margin(0 null rem(8) null);
+            font-weight: 400;
+            font-size: rem(18);
+        }
+    }
+}
