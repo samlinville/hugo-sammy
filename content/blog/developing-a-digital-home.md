@@ -2,7 +2,7 @@
 title: "Developing a Digital Home"
 subtitle: "Or, how to automate yourself into a habit"
 date: 2020-09-10T22:06:16-07:00
-draft: false
+draft: true
 ---
 I'm so bad at blogging. I've tried to make it a habit several times over the past few years, and every attempt is exactly the same. I start, I write two or three pieces, and a year later the blog is stale and I'm embarrassed. I think I can boil this down to a handful of things that consistently hold me back.
 
