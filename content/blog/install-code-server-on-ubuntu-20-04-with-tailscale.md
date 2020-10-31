@@ -11,7 +11,7 @@ As a result, I decided to integrate it into my Tailscale network. Tailscale is a
 
 [Tailscale](https://tailscale.com/)
 
-# Prerequisites
+## Prerequisites
 
 1. Tailscale is installed and set up on the host machine and any machine you plan to use to access the VS Code instance. I'm using the latest LTS version of Ubuntu, 20.04.
 
@@ -23,13 +23,13 @@ As a result, I decided to integrate it into my Tailscale network. Tailscale is a
 
 3. You have a non-root user with sudo access, and you should set up key-based SSH access to the host machine. Lastly, disable the ability to authenticate with a password or log in as root. You should also only allow users to SSH into the machine from certain IPs. Set this up as strict as you like, just make sure you don't lock yourself out. 😉
 
-# Installation
+## Installation
 
 **These instructions are derived from a great article over at DigitalOcean.** Because we're installing within a Tailscale network, the process of getting a Let's Encrypt certificate is a little bit trickier.
 
 You need to set code-server up with a real domain name that you actually own, because you'll be adding a TXT record to verify your ownership of the domain with Let's Encrypt.
 
-## Main instructions
+### Main instructions
 
 Following these instructions exactly, but **stop after step 2**. We'll secure the domain ourselves.
 
@@ -43,13 +43,13 @@ To test that you set everything up successfully, visit http://yourdomain.com. Do
 
 Next, we'll get HTTPS set up so you have full functionality.
 
-## Securing your domain
+### Securing your domain
 
 Because Let's Encrypt can't communicate with machines inside our Tailscale network, we can't have a signed cert as automagically as is possible on a public-facing machine. Instead, we'll use DNS verification to prove to Let's Encrypt that we really own the domain. **This works even if you're using an internal DNS within the Tailscale network to actually resolve the domain name.**
 
 Make sure you have access to the DNS control panel for the domain. You'll need to add a TXT record as part of the certification process.
 
-### Update firewall settings
+#### Update firewall settings
 
 First up, we want to modify the `ufw` rules to allow HTTPS traffic.
 
@@ -72,7 +72,7 @@ sudo ufw reload
 
 If it reloads successfully, the output will be `Firewall reloaded`.
 
-### Install Certbot
+#### Install Certbot
 
 Next, let's get Certbot installed. First, we need to add some repositories.
 
@@ -89,7 +89,7 @@ Install Certbot and the accompanying tool for Nginx.
 sudo apt install certbot python-certbot-nginx
 ```
 
-### Obtaining a Let's Encrypt signed certificate
+#### Obtaining a Let's Encrypt signed certificate
 
 Now for the good part– let's get that certificate! Here's what's going on in the command below.
 
@@ -120,7 +120,7 @@ Head over to your DNS control panel, and under the domain name you specified in 
 
 If the process is successful, you'll see a success message that lists out the paths of the signed certificate and private key. Make a note of these file paths.
 
-### Updating Nginx settings to use code-server over HTTPS
+#### Updating Nginx settings to use code-server over HTTPS
 
 First, let's back up your old `code-server.conf` file.
 
@@ -176,7 +176,7 @@ sudo systemctl restart nginx
 
 This should be all you need! Visit [https://yourdomain.com](https://yourdomain.com) and if everything is configured correctly, you should be seeing a brand new, shiny instance of VS Code, viewable on any device in your Tailscale network!
 
-## Changing the default user within code-server
+### Changing the default user within code-server
 
 There’s one more small detail that you’re probably going to want to tweak. By default, the systemd service that the DigitalOcean article has you establish to run code-server doesn’t specify a user, so it will probably end up running as root. Normally you might not care about this, except that VS Code will allow shell access to anyone through the web UI. If the service is running from the root account...then the VS Code terminal will be signed in as root. Obviously, whether this is protected in a Tailscale network or not, it isn’t ideal.
 
