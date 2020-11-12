@@ -1,10 +1,10 @@
 baseURL = "https://samlinville.com/"
 languageCode = "en-us"
-title = "Sam Linville — Product designer & strategist"
+title = "Sam Linville — Product manager & designer"
 
 [params]
   name = "Sam Linville"
-  job = "Product designer & strategist"
+  job = "Product manager & designer"
   location = "Stanford, CA"
 
 [menu]
