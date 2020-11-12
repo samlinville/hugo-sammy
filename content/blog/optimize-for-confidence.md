@@ -4,7 +4,7 @@ subtitle: "We spend too much time at work to use bad software while we're there"
 date: 2020-10-31T13:06:40-07:00
 draft: false
 ---
-I took on my first internship in 2016 after doing basically zero research on the company. I couldn't have been more clueless on Day 1, and over my first week, I learned that I was going to be building software for an internal team at a digital ad targeting firm.
+I took on my first internship in 2016 after doing basically zero research on the company. I couldn't have been more clueless on Day 1, and over my first week, I learned that I was going to be building software for an internal team at a digital ad targeting firm. To be clear, I do not recommend this approach to job hunting...
 
 In complete honesty, I was immediately disappointed. At the time, I had my heart set on a career in consumer tech and was more than frustrated with myself for eagerly accepting an internship at a company that had so little to do with my future plans. But as the weeks ticked by, I started to enjoy coming in every day. A lot of it had to do with the team— to date, they're still the best group of people I've ever worked with, and I credit them for teaching me everything I actually know about UX.
 
