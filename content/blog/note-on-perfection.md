@@ -2,7 +2,7 @@
 title: "A Note on Perfection"
 subtitle: "The first step is admitting you have a problem"
 date: 2020-12-05T18:15:15-05:00
-draft: true
+draft: false
 ---
 
 I have been posting content to http://samlinville.com since about 2006, when I was in the sixth grade. Back then, I used a pre-designed template from Microsoft Publisher to post daily blog updates about life in middle school. A year later, armed with a copy of Microsoft Expression Web, I started kicking the tires on HTML and CSS, and a handful of years after that, I used my first CSS framework: Zurb Foundation 4.
