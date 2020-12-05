@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: "Academica";
+    src: url("/fonts/AcademicaBook.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Academica";
+    src: url("/fonts/AcademicaBook-Italic.woff") format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Academica";
+    src: url("/fonts/AcademicaBook-Bold.woff") format('woff');
+    font-weight: bold;
+}

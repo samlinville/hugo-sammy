@@ -4,7 +4,7 @@ title = "Sam Linville — Product manager & designer"
 
 [params]
   name = "Sam Linville"
-  job = "Product manager & designer"
+  job = "Product management & design"
   location = "Stanford, CA"
 
 [menu]
@@ -16,3 +16,7 @@ title = "Sam Linville — Product manager & designer"
     name = "Blog"
     url = "/blog/"
     weight = 2
+[[menu.main]]
+    name = "Reading"
+    url = "/reading/"
+    weight = 3

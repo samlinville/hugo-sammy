@@ -1,6 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.sammy-banner {
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    p {
+        font-size: rem(14);
+        padding: rem(8) 0;
+    }
+}
+
 .sammy-navigation {
     @include clearfix;
     @include padding(rem(64) null rem(96) null);
