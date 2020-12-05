@@ -16,7 +16,3 @@ title = "Sam Linville — Product manager & designer"
     name = "Blog"
     url = "/blog/"
     weight = 2
-[[menu.main]]
-    name = "Reading"
-    url = "/reading/"
-    weight = 3
