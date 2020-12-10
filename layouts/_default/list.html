@@ -6,6 +6,8 @@
         <p>{{ .Params.Subtitle }}</p>
     </header>
 
+    {{ .Content }}
+
     {{ range .Pages }}
     <article class="list">
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
