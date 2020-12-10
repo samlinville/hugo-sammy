@@ -10,13 +10,13 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/reading
-  label: Reading
+  path: content/blog
+  label: Blog
   create: all
   match: "**/*"
 - type: directory
-  path: content/blog
-  label: Blog
+  path: content/reading
+  label: Reading
   create: all
   match: "**/*"
 upload_dir: static/uploads
