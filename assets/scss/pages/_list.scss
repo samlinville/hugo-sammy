@@ -1,20 +1,35 @@
 .list {
-    a {
-        color: $l-text-normal;
-    }
     
     h2 {
         font-size: rem(32);
         font-weight: 600;
         margin-bottom: rem(8);
+
     }
 
     p:first-of-type {
         font-size: rem(18);
-        margin-bottom: 0;
+        margin-bottom: rem(8);
+        color: $l-text-light;
+
+        a {
+            color: $l-text-light;
+        }
     }
 
     p:nth-of-type(2) {
-        color: $l-text-light;
+        margin-bottom: rem(8);
     }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    li {
+        padding-left: 0;
+        margin-bottom: rem(8);
+        line-height: rem(21);
+    }
+
 }

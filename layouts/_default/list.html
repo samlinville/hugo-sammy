@@ -8,19 +8,17 @@
 
     {{ range .Pages }}
     <article class="list">
-        <a href="{{ .RelPermalink }}">
-            <h2>{{ .Title }}</h2>
-            <p>{{ .Params.Subtitle }}</p>
-            <!--<p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p> -->
-            
-            {{ if .IsSection }}
-                <ul>
-                {{ range where .Pages "Section" "blog" }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
-                </ul>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p><a href="{{ .RelPermalink }}">{{ .Params.Subtitle }}</a></p>
+        <!--<p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p> -->
+        
+        {{ if .IsSection }}
+            <ul>
+            {{ range where .Pages "Section" "blog" }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
-        </a>
+            </ul>
+        {{ end }}
     </article>
     {{ end }}
 </main>
