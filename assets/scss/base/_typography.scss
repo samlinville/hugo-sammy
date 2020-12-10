@@ -8,7 +8,7 @@ body {
   font-family: $g-font-family;
   font-size: rem(18);
   font-weight: 400;
-  line-height: 1.65;
+  line-height: 1.5;
   color: $l-text-normal;
 }
 
@@ -74,6 +74,38 @@ a {
          transition: color 100ms;
          transition-timing-function: ease-in-out;
    }
+}
+
+aside {
+  background: #F7F6F3;
+  padding: rem(32) rem(20);
+  margin-bottom: rem(20);
+  max-width: rem(600);
+  @include clearfix;
+
+  .emoji {
+    font-size: rem(20);
+    max-width: rem(48);
+    float: left;
+    line-height: 1;
+  }
+
+  .content {
+    max-width: rem(564);
+    float: right;
+    margin-left: rem(16);
+
+    h2 {
+      font-size: rem(16);
+      margin-bottom: rem(8);
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: rem(0);
+      font-size: rem(16);
+    }
+  }
 }
 
 ol, ul {

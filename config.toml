@@ -16,3 +16,8 @@ title = "Sam Linville — Product manager & designer"
     name = "Blog"
     url = "/blog/"
     weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
