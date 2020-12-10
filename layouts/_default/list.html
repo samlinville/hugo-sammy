@@ -7,11 +7,19 @@
     </header>
 
     {{ range .Pages }}
-    <article>
+    <article class="list">
         <a href="{{ .RelPermalink }}">
             <h2>{{ .Title }}</h2>
             <p>{{ .Params.Subtitle }}</p>
-            <p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p>
+            <!--<p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p> -->
+            
+            {{ if .IsSection }}
+                <ul>
+                {{ range where .Pages "Section" "blog" }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{ end }}
+                </ul>
+            {{ end }}
         </a>
     </article>
     {{ end }}
