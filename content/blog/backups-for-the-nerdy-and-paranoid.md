@@ -1,10 +1,9 @@
 ---
-title: "Backups for the Nerdy and Paranoid"
-subtitle: "One is none."
-date: 2020-09-25T11:30:34-07:00
-draft: false
----
+title: Backups for the nerdy and paranoid
+subtitle: One is none.
+date: 2020-09-25T11:30:34.000-07:00
 
+---
 In 2017, I had to reinstall macOS on my MacBook Pro. Before taking the plunge, I was careful to back up all of my files, *or so I thought.* In reality, I neglected the only folder on my computer that actually mattered: An archive of all of my work from design school up that point, carefully sorted by course and semester. I scoured all of my external hard drives and Google Drive folders, and in the end, the only trace of these projects were a few slide decks and thumbnail images from my portfolio site.
 
 Losing that archive was like losing a huge piece of my history. There were probably thousands of hours worth of work represented in those files, and I called my parents and sobbed while I told them what happened.
