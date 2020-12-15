@@ -2,7 +2,7 @@
 title: "Connecting the nodes to Tailscale with Ansible"
 subtitle: "Tailscale lets us securely access our cluster from anywhere in the world"
 date: 2020-12-10T16:12:31-05:00
-draft: true
+draft: false
 ---
 
 The rest of this post will make heavy use of Red Hat Ansible to automate tasks across the four Raspberry Pis, so we don't have to SSH into each Pi individually. If you don't have Ansible on your Mac, I recommend using Homebrew to quickly install it (`brew install ansible`). If you don't have Homebrew, you should get that immediately, it'll change your life.

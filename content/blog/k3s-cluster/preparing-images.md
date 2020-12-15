@@ -2,7 +2,7 @@
 title: "Preparing images for each Raspberry Pi node with pi-boot-script"
 subtitle: "Automating as much of the setup process as possible"
 date: 2020-12-10T16:11:11-05:00
-draft: true
+draft: false
 ---
 Before we can get to the Kubernetes portion of this project, we have to get some OS images onto SD cards and booted on the Pis. Because I'd like to start this project on the right foot, we're going to do as little manual work as possible here, meaning that my goal is to not need to SSH into each *individual* Pi to complete any configuration steps. Partially, this is because at some point in the future, I'd like to remove K3s from the cluster and try out Hashicorp Nomad as an orchestration platform instead, so I'd like to have a very easy way to deploy fresh, pre-configured images.
 

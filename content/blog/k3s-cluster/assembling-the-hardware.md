@@ -2,7 +2,7 @@
 title: "Assembling the hardware"
 subtitle: "A quick review of the physical hardware in this cluster"
 date: 2020-12-10T16:10:57-05:00
-draft: true
+draft: false
 ---
 First, I gathered four Raspberry Pi 4's. I say "gathered" because I already had most of them lying around, so I just picked up a fourth board to round out my set. The thing about Raspberry Pis is, they're easy to accumulate. I see this as a giant plus. I don't know if my boyfriend shares this enthusiasm.
 
