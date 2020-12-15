@@ -1,0 +1,49 @@
+.sammy-post-nav {
+    margin-top: rem(64);
+    display:flex;
+    flex-flow:row;
+
+    .post {
+        width: 100%;
+        display: block;
+        margin: rem(10);
+        padding: rem(20);
+        border: 1px solid $l-primary;
+        cursor: pointer;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        transition: background-color 100ms;
+        transition-timing-function: ease-in-out;
+
+        &:hover {
+            background-color: rgba(67, 83, 255, 0.1);
+            transition: background-color 100ms;
+            transition-timing-function: ease-in-out;
+
+            p {
+                color: $l-text-normal;
+                transition: color 100ms;
+                transition-timing-function: ease-in-out;
+            
+            }
+        }
+    }
+
+    p {
+        // font-size: rem(12);
+        // font-weight: 900;
+        // text-transform: uppercase;
+        // letter-spacing: rem(2);
+        margin-bottom: rem(0);
+        color: $l-text-light;
+        transition: color 100ms;
+        transition-timing-function: ease-in-out;
+    }
+}

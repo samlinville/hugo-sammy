@@ -15,14 +15,16 @@
         <!--<p>{{ math.Round (div (countwords .Content) 220.0) }} minute read</p> -->
         
         {{ if .IsSection }}
+            <h3>Chapters</h3>
             <ul>
-            {{ range where .Pages "Section" "blog" }}
+            {{ range where .Pages.Reverse "Section" "blog" }}
                 <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
             {{ end }}
             </ul>
         {{ end }}
     </article>
     {{ end }}
+
 </main>
 
 {{ end }}

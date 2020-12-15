@@ -8,6 +8,28 @@
         </header>
         {{ .Content }}
     </article>
+
+    <!-- Prev / Next Post -->
+<nav class="sammy-post-nav">
+	{{ if ne .PrevInSection  nil }}
+            {{ with .PrevInSection }}
+            <a class="post" href="{{.Permalink}}" rel="prev">
+                    <p>Previous</p>
+                    {{ .Title }}
+            </a>
+            {{ end }}
+    {{ end }}
+    
+	{{ if ne .NextInSection  nil }}
+        {{ with .NextInSection }}
+        <a class="post" href="{{ .Permalink }}" rel="next">
+                <p>Next</p>
+                {{ .Title }}
+        </a>
+        {{ end }}
+	{{ end }}
+</nav>
+
 </main>
 
 {{ end }}

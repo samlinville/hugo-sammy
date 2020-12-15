@@ -1,7 +1,13 @@
-<aside>
+<section class="aside">
     <div class="emoji">{{.Get "emoji"}}</div>
     <div class="content">
         <h2>{{.Get "title"}}</h2>
-        {{.Inner | markdownify}}
+        {{- $markdown := .Inner | markdownify -}}
+
+        {{ if not ( findRE "<[h|p][^>]*>" $markdown ) }}
+            <p>{{ $markdown }}</p>
+        {{ else }}
+            {{ $markdown }}
+        {{ end }}
     </div>
-</aside>
+</section>

@@ -76,10 +76,10 @@ a {
    }
 }
 
-aside {
-  background: #F7F6F3;
+.aside {
+  background: #f3f3f7;
   padding: rem(32) rem(20);
-  margin-bottom: rem(20);
+  margin-bottom: rem(24);
   max-width: rem(600);
   @include clearfix;
 
@@ -102,8 +102,12 @@ aside {
     }
 
     p {
-      margin-bottom: rem(0);
+      margin-bottom: rem(8);
       font-size: rem(16);
+
+      &:last-of-type {
+        margin-bottom: rem(0);
+      }
     }
   }
 }
@@ -120,7 +124,6 @@ li {
 }
 
 pre {
-  max-width: rem(640);
   @include margin(rem(36) null);
   code {
     background: none;
