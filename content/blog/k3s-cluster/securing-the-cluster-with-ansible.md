@@ -149,14 +149,14 @@ So far, your project directory should look like this:
 
 ```bash
 Project/
-	- /etc/
-		- /ssh/
-			- /sshd_config
-		- /sudoers.d/
-			- /ansible
-	- /pi-tailscale.yml
-	- /pi-security.yml
-	- /hosts.ini
+  - /etc/
+    - /ssh/
+      - /sshd_config
+    - /sudoers.d/
+      - /ansible
+  - /pi-tailscale.yml
+  - /pi-security.yml
+  - /hosts.ini
 ```
 
 ## Run the Ansible playbook
